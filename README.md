@@ -16,7 +16,7 @@
 * view：放各个模块的文件
 ## 3、主要文件的说明
 * routers/index.ts：主路由的文件入口，因为项目中牵扯到的模块是非常多的，所以在实际项目中我们将各个模块的路由单独配置，最后以impor的方式导入到主路由文件中，最后只要将主入口路由文件引入main.ts即可
-* services/remote.service.ts：基于axiose二次封装的GET、POST等请求方法以及请求拦截器的设置，具体可以点击查看，里面有详细的文字说明
+* services/remote.service.ts：基于axios二次封装的GET、POST等请求方法以及请求拦截器的设置，具体可以点击查看，里面有详细的文字说明
 * services/auth、common等：主要是将各个模块相关的进行内聚（比如属于自己的接口地址url、请求方法index.ts、以及store.ts）
 * store/index.ts：主要的store入口，主要将services目录下各个模块的store以import方式导入，最后在main.ts引入（其实用不用vuex根据自己的需求决定，这里只是为了说明）
 * util/validate.ts：自定义的一些验证方法，主要是为了在项目中某些个别的验证，没有或者不需要引入Element-ui的form组件以及其自身的那套验证方式
